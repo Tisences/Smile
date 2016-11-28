@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/comment_flag"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:src="@drawable/accurate_comment" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/author_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/author_image"
+            android:layout_toEndOf="@+id/author_image"
+            android:gravity="center"
+            android:text="@string/test_text1"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/praise"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/author_name">
+
+            <ImageView
+                android:id="@+id/praise_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:src="@drawable/praise" />
+
+            <TextView
+                android:id="@+id/praise_num"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/test_num"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/test_text3"
+        android:textColor="@color/black" />
+</LinearLayout>

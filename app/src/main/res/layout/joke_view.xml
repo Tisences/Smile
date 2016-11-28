@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/snow"
+    android:padding="10dp">
+
+    <com.tisen.smile.utils.CircleImageView
+        android:id="@+id/joke_author_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/praise_1" />
+
+    <TextView
+        android:id="@+id/joke_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/joke_author_image"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="@string/test_text1" />
+
+    <TextView
+        android:id="@+id/joke_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="举报" />
+
+    <TextView
+        android:id="@+id/joke_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/joke_author_image"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/test_text2" />
+
+    <ImageView
+        android:id="@+id/joke_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/joke_content"
+        android:src="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/joke_click_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/joke_image"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/joke_click_tip" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/joke_image"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/joke_like_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:id="@+id/joke_like_num"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/joke_like_image"
+            android:gravity="center"
+            android:text="@string/test_num" />
+
+        <ImageView
+            android:id="@+id/joke_dislike_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/joke_like_num"
+            android:src="@drawable/dislike" />
+
+        <TextView
+            android:id="@+id/joke_dislike_num"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@id/joke_dislike_image"
+            android:gravity="center"
+            android:text="@string/test_num" />
+        <com.tisen.smile.utils.CollectImageView
+            android:id="@+id/joke_collect"
+            android:src="@drawable/collect"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

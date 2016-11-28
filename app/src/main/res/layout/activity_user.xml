@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/user_background"
+            android:src="@drawable/image_test1"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/activity_top_view"/>
+        <com.tisen.smile.utils.CircleImageView
+            android:src="@drawable/image_test1"
+            android:id="@+id/user_avatar"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <TextView
+            android:text="15000531187"
+            android:textSize="25dp"
+            android:textColor="@color/snow"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_below="@id/user_avatar"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/user_sex"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/male"
+            android:layout_alignTop="@+id/user_name"
+            android:layout_toEndOf="@+id/user_name" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/user_logoff"
+        android:text="退出登录"
+        android:layout_width="wrap_content"
+        android:background="@drawable/edit_background"
+        android:layout_height="40dp" />
+</RelativeLayout>

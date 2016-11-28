@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/red_theme_background"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_top_view" />
+    <EditText
+        android:id="@+id/write_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:hint="@string/test_text3" />
+
+    <ImageView
+        android:id="@+id/write_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/write_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_default" />
+    <ProgressBar
+        android:id="@+id/write_upload_progress"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/write_content" />
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignEnd="@id/write_image"
+        android:layout_below="@+id/write_content"
+        android:src="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/content_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/write_content"
+        android:layout_toStartOf="@+id/textView"
+        android:gravity="center"
+        android:text="120"
+        android:textColor="@color/lightsteelblue" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/write_content"
+        android:gravity="center"
+        android:text="/160"
+        android:textColor="@color/lightsteelblue" />
+</RelativeLayout>
