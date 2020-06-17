@@ -1,6 +1,5 @@
 package com.tisen.smile.model;
 
-import android.support.v4.app.NotificationCompatSideChannelService;
 
 import com.tisen.smile.utils.FileType;
 

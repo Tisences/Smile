@@ -3,13 +3,13 @@ apply plugin: 'com.android.application'
 android {
 
     useLibrary 'org.apache.http.legacy'
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.tisen.smile"
-        minSdkVersion 21
-        targetSdkVersion 23
+        minSdkVersion 24
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
     }
@@ -25,15 +25,16 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile files('libs/imageloader-1.9.5.jar')
-    compile files('libs/volley.jar')
-    compile 'com.android.support:design:23.3.0'
+//    compile 'com.android.support:appcompat-v7:29.3.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation files('libs/imageloader-1.9.5.jar')
+    implementation files('libs/volley.jar')
+//    compile 'com.android.support:design:29.3.0'
 
-    compile 'com.github.satyan:sugar:1.5'
-    compile 'com.facebook.fresco:fresco:0.12.0'
+    implementation 'com.github.satyan:sugar:1.5'
+    implementation 'com.facebook.fresco:fresco:0.12.0'
 //    compile 'cn.bmob.android:bmob-sdk:3.7.8'
 //    compile 'cn.bmob.android:bmob-sms:1.0.1'
 
@@ -43,4 +44,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.14.1'
     implementation 'com.squareup.okio:okio:2.2.2'
     implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.android.material:material:1.1.0'
 }

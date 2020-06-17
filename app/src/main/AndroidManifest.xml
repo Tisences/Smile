@@ -32,6 +32,11 @@
         <activity android:name=".activity.MyCommentActivity"/>
         <activity android:name=".activity.SettingActivity"/>
         <activity android:name=".activity.WriteJokeActivity"/>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.tisen.smile.BmobContentProvider">
+        </provider>
     </application>
 
 </manifest>

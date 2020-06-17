@@ -2,10 +2,10 @@ package com.tisen.smile.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.ListView;
+
+import androidx.fragment.app.Fragment;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.tisen.smile.utils.HttpHelper;
@@ -28,7 +28,7 @@ public class ViewPagerFragment extends Fragment {
     protected ImageLoader loader;
     protected User user;
 
-    protected ArrayList<Joke>jokes;
+    protected ArrayList<Joke> jokes;
     protected ListView jokeListView;
     protected JokeAdapter jokeAdapter;
 
@@ -43,7 +43,6 @@ public class ViewPagerFragment extends Fragment {
         user = (User) getArguments().getSerializable("user");
     }
 
-    @Nullable
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {

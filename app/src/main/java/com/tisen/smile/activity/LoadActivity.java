@@ -1,6 +1,7 @@
 package com.tisen.smile.activity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.tisen.smile.utils.HttpHelper;
@@ -25,12 +26,11 @@ public class LoadActivity extends BaseActivity {
             @Override
             public void run() {
                 Intent intent = new Intent();
-                intent.setClass(LoadActivity.this,MainActivity.class);
+                intent.setClass(LoadActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
         };
-        timer.schedule(timerTask,2000);
-
+        timer.schedule(timerTask, 2000);
     }
 }
